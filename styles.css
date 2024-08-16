@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+body{
+    display: flex;
+  
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+width: 300px;
+height: 100vh;
+border-right: 3px solid gray;
+position: fixed;
+
+}
+#navbar header{
+
+    padding: 10px;
+    font-size:30px;
+    text-align: center;
+
+    width: 100%;
+    z-index: 3;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+  
+   
+}
+.nav-link{
+    border-top: 1px solid gray;
+    padding: 13px;
+    padding-left: 30px;
+   
+    
+}
+#main-doc{
+    position: relative;
+    width: 100%;
+   margin-left: 300px;
+}
+.main-section{
+    
+    padding: 10px 30px;
+}
+.main-section header{
+    font-size: larger;
+}
+.main-section p{
+  
+    padding: 10px 15px;
+}
+.main-section ul{
+    padding: 10px 50px;
+}
+.main-section ul li{
+    padding: 10px 0;
+}
+code{
+    display: block;
+    background-color:rgb(241, 238, 238);
+    padding: 20px;
+    margin-left: 20px;
+    width: 100%;
+    
+}
+#Reference_link{
+   color: blue;
+   text-decoration: underline;
+}
+@media(max-width:820px){
+    body{
+        flex-direction: column;
+    }
+  
+    nav{
+   position: static;
+        width: 100%;
+        max-height: 270px;
+     
+    }
+    #main-doc{
+        position: static;
+        margin: 0;
+    }
+    #links{
+        overflow: hidden;
+        overflow-y: scroll;
+        
+        border: 1px solid black;
+    }
+  code{
+    margin: 0;
+    padding: 10px;
+  }
+    .main-section ul{
+      padding: 10px;
+           padding-left: 50px;
+       }
+}
